@@ -12,6 +12,14 @@
 		5B2C8BB4218CB8520012661E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2C8BB2218CB8520012661E /* Main.storyboard */; };
 		5B2C8BB6218CB8540012661E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2C8BB5218CB8540012661E /* Assets.xcassets */; };
 		5B2C8BB9218CB8540012661E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2C8BB7218CB8540012661E /* LaunchScreen.storyboard */; };
+		5B2C8BC1218CBDD80012661E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C8BC0218CBDD80012661E /* Font.swift */; };
+		5B4224EF218ED37A0006AF10 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224E8218ED37A0006AF10 /* SFProText-Semibold.ttf */; };
+		5B4224F0218ED37A0006AF10 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224E9218ED37A0006AF10 /* SFProText-Regular.ttf */; };
+		5B4224F1218ED37A0006AF10 /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224EA218ED37A0006AF10 /* SFProDisplay-Medium.ttf */; };
+		5B4224F2218ED37A0006AF10 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224EB218ED37A0006AF10 /* SFProDisplay-Regular.ttf */; };
+		5B4224F3218ED37A0006AF10 /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224EC218ED37A0006AF10 /* SFProDisplay-Bold.ttf */; };
+		5B4224F4218ED37A0006AF10 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224ED218ED37A0006AF10 /* SFProText-Bold.ttf */; };
+		5B4224F5218ED37A0006AF10 /* SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4224EE218ED37A0006AF10 /* SFProDisplay-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		5B2C8BB5218CB8540012661E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B2C8BB8218CB8540012661E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B2C8BBA218CB8540012661E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B2C8BC0218CBDD80012661E /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		5B4224E8218ED37A0006AF10 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		5B4224E9218ED37A0006AF10 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		5B4224EA218ED37A0006AF10 /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		5B4224EB218ED37A0006AF10 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		5B4224EC218ED37A0006AF10 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		5B4224ED218ED37A0006AF10 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		5B4224EE218ED37A0006AF10 /* SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,8 @@
 		5B2C8BAD218CB8520012661E /* LKFontLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				5B4224E7218ED37A0006AF10 /* Fonts */,
+				5B2C8BC0218CBDD80012661E /* Font.swift */,
 				5B2C8BAE218CB8520012661E /* AppDelegate.swift */,
 				5B2C8BB0218CB8520012661E /* ViewController.swift */,
 				5B2C8BB2218CB8520012661E /* Main.storyboard */,
@@ -62,6 +80,20 @@
 				5B2C8BBA218CB8540012661E /* Info.plist */,
 			);
 			path = LKFontLibrary;
+			sourceTree = "<group>";
+		};
+		5B4224E7218ED37A0006AF10 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B4224E8218ED37A0006AF10 /* SFProText-Semibold.ttf */,
+				5B4224E9218ED37A0006AF10 /* SFProText-Regular.ttf */,
+				5B4224EA218ED37A0006AF10 /* SFProDisplay-Medium.ttf */,
+				5B4224EB218ED37A0006AF10 /* SFProDisplay-Regular.ttf */,
+				5B4224EC218ED37A0006AF10 /* SFProDisplay-Bold.ttf */,
+				5B4224ED218ED37A0006AF10 /* SFProText-Bold.ttf */,
+				5B4224EE218ED37A0006AF10 /* SFProDisplay-Semibold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +155,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B2C8BB9218CB8540012661E /* LaunchScreen.storyboard in Resources */,
+				5B4224EF218ED37A0006AF10 /* SFProText-Semibold.ttf in Resources */,
 				5B2C8BB6218CB8540012661E /* Assets.xcassets in Resources */,
+				5B4224F5218ED37A0006AF10 /* SFProDisplay-Semibold.ttf in Resources */,
+				5B4224F2218ED37A0006AF10 /* SFProDisplay-Regular.ttf in Resources */,
+				5B4224F0218ED37A0006AF10 /* SFProText-Regular.ttf in Resources */,
 				5B2C8BB4218CB8520012661E /* Main.storyboard in Resources */,
+				5B4224F1218ED37A0006AF10 /* SFProDisplay-Medium.ttf in Resources */,
+				5B4224F4218ED37A0006AF10 /* SFProText-Bold.ttf in Resources */,
+				5B4224F3218ED37A0006AF10 /* SFProDisplay-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +176,7 @@
 			files = (
 				5B2C8BB1218CB8520012661E /* ViewController.swift in Sources */,
 				5B2C8BAF218CB8520012661E /* AppDelegate.swift in Sources */,
+				5B2C8BC1218CBDD80012661E /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
