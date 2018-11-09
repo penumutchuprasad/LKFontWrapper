@@ -35,7 +35,7 @@ struct Font {
         }
         
     }
-    
+
     enum TraitType: String {
         
         case Regular
