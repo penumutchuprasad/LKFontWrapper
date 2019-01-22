@@ -74,6 +74,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICU-k5-aTn">
+                                <rect key="frame" x="57" y="203" width="260" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="File Mnger Tutorial"/>
+                                <connections>
+                                    <segue destination="SYF-DE-JDq" kind="show" id="oNh-ar-hh7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -86,7 +95,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yS6-jU-psd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1868" y="60"/>
+            <point key="canvasLocation" x="1868" y="59.820089955022496"/>
+        </scene>
+        <!--File MngrVC-->
+        <scene sceneID="6ox-Qs-Xhb">
+            <objects>
+                <viewController storyboardIdentifier="FileMngrVC" id="SYF-DE-JDq" customClass="FileMngrVC" customModule="LKFontLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfp-XU-bn7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fky-xr-bEx">
+                                <rect key="frame" x="100" y="108.5" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="6ke-w9-IHf"/>
+                                    <constraint firstAttribute="height" constant="50" id="nFr-Vd-VIp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Retriev Imgs"/>
+                                <connections>
+                                    <action selector="onRetriveButtonClicl:" destination="SYF-DE-JDq" eventType="touchUpInside" id="wJj-0a-vXH"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zcN-vb-x30">
+                                <rect key="frame" x="0.0" y="178.5" width="375" height="468.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fy6-mi-1oL">
+                                    <size key="itemSize" width="194" height="167"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImgCell" id="wWN-Mk-6EZ" customClass="ImgCell" customModule="LKFontLibrary" customModuleProvider="target">
+                                        <rect key="frame" x="90.5" y="0.0" width="194" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="194" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9O-RJ-nTd">
+                                                    <rect key="frame" x="8" y="8" width="178" height="151"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="d9O-RJ-nTd" firstAttribute="leading" secondItem="wWN-Mk-6EZ" secondAttribute="leading" constant="8" id="6eu-GE-ZMB"/>
+                                            <constraint firstAttribute="bottom" secondItem="d9O-RJ-nTd" secondAttribute="bottom" constant="8" id="N4z-D5-Ke5"/>
+                                            <constraint firstItem="d9O-RJ-nTd" firstAttribute="top" secondItem="wWN-Mk-6EZ" secondAttribute="top" constant="8" id="dvA-si-Mhd"/>
+                                            <constraint firstAttribute="trailing" secondItem="d9O-RJ-nTd" secondAttribute="trailing" constant="8" id="qcA-dI-yH4"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgView" destination="d9O-RJ-nTd" id="WXz-82-Cfi"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-fY-ASd">
+                                <rect key="frame" x="16" y="76" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Move 2"/>
+                                <connections>
+                                    <action selector="onMove:" destination="SYF-DE-JDq" eventType="touchUpInside" id="1ZC-xO-PMP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ7-Ju-izR">
+                                <rect key="frame" x="291" y="76" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Move 1"/>
+                                <connections>
+                                    <action selector="onMove:" destination="SYF-DE-JDq" eventType="touchUpInside" id="C8M-Se-ZgB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5zW-1F-JfM" firstAttribute="bottom" secondItem="zcN-vb-x30" secondAttribute="bottom" constant="20" id="0KR-wI-GSd"/>
+                            <constraint firstItem="zcN-vb-x30" firstAttribute="top" secondItem="fky-xr-bEx" secondAttribute="bottom" constant="20" id="Bvj-Ct-OfN"/>
+                            <constraint firstItem="fky-xr-bEx" firstAttribute="centerY" secondItem="cfp-XU-bn7" secondAttribute="centerY" constant="-200" id="K10-bF-o3U"/>
+                            <constraint firstItem="zcN-vb-x30" firstAttribute="leading" secondItem="5zW-1F-JfM" secondAttribute="leading" id="QBH-rA-98A"/>
+                            <constraint firstItem="fky-xr-bEx" firstAttribute="centerX" secondItem="cfp-XU-bn7" secondAttribute="centerX" id="ahh-1L-Efn"/>
+                            <constraint firstItem="5zW-1F-JfM" firstAttribute="trailing" secondItem="zcN-vb-x30" secondAttribute="trailing" id="qTe-DR-SIQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5zW-1F-JfM"/>
+                    </view>
+                    <connections>
+                        <outlet property="collView" destination="zcN-vb-x30" id="e3g-eE-UcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5l-TE-G42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597.5999999999999" y="44.527736131934034"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SU0-7C-Yu4">
